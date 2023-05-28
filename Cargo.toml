@@ -1,5 +1,5 @@
 [package]
-name = "UTTTFrontend"
+name = "uttt_frontend"
 version = "0.1.0"
 authors = ["festivity <nrk139@gmail.com>"]
 edition = "2018"
