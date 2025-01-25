@@ -17,27 +17,28 @@ pub struct Detail {
 
 impl Detail {
     fn render_detail(&self, todo: &Option<Todo>) -> Html {
-        match todo {
+        let output = match todo {
             Some(t) => {
                 let completed = if t.completed {
                     Some("completed")
                 } else {
                     Some("not-completed")
                 };
-                html! {
+                html!{
                     <div class=classes!("detail")>
                         <h1>{&t.title}{" ("}<span class=classes!("id")>{t.id}</span>{")"}</h1>
                         <div>{"by user "}{t.user_id}</div>
                         <div class=classes!(completed)>{if t.completed { "done" } else { "not done" }}</div>
                     </div>
                 }
-            }
+            },
             None => {
-                html! {
+                html!{
                     <div class=classes!("loading")>{"loading..."}</div>
                 }
             }
-        }
+        };
+        output
     }
 }
 

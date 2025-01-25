@@ -47,6 +47,7 @@ impl Component for TodoApp {
     type Message = Msg;
     type Properties = ();
     fn create(_: Self::Properties, link: ComponentLink<Self>) -> Self {
+        println!("can I print to log in create?");
         link.send_message(Msg::MakeReq);
         Self {
             link,
@@ -56,6 +57,7 @@ impl Component for TodoApp {
     }
 
     fn update(&mut self, msg: Self::Message) -> ShouldRender {
+        println!("can I print to log in update?");
         match msg {
             Msg::MakeReq => {
                 self.todos = None;
@@ -88,6 +90,7 @@ impl Component for TodoApp {
     }
 
     fn view(&self) -> Html {
+        println!("can I print to log in view?");
         let todos = self.todos.clone();
         let cb = self.link.callback(|_| Msg::MakeReq);
         ConsoleService::info(&format!("render TodoApp: {:?}", todos));
