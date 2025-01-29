@@ -8,6 +8,18 @@ to improve my development experience by building a website that can display an i
 game. I'd like the board to allow me to play a game where either player can be AI or human, and I'd like
 the website to further help me visualize the results of the monte carlo tree search engine.
 
+### Stuff I'm still learning more about (TODOs!)
+* HTML
+* CSS
+* Hooks
+  * What's a reducer?
+  * I think I might know what an effect is.
+  * I might know what context is?
+* What's SVG in a web context? I'm seeing it next to HTML sometimes which makes me think it's not Support Vector Graphics SVG
+  * Answer: It looks like this IS support vector graphics, and is on the web! I didn't know it could be mixed in with HTML this way. Cool!
+* What's routing?
+* How do children REALLY work with components in Yew?
+
 
 ## rust-frontend-example-yew
 

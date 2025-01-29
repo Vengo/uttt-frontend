@@ -7,4 +7,22 @@ edition = "2021"
 # Generated based on https://github.com/zupzup/rust-frontend-example-yew/blob/main/Cargo.toml
 
 [dependencies]
-yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
+gloo = "0.11.0"
+yew-router = "0.18.0"
+
+[dependencies.yew]
+version = "0.21"
+features = [
+    "csr"
+]
+
+[dependencies.web-sys]
+version = "0.3"
+# We need to enable the `DomRect` feature to use the
+# `get_bounding_client_rect` method.
+features = [
+    "console",
+    "HtmlElement",
+    "MouseEvent",
+    "DomRect",
+]

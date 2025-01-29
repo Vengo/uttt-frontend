@@ -1,3 +1,34 @@
+[build]
+# The index HTML file to drive the bundling process.
+target = "index.html"
+# Build in release mode.
+release = false
+# Use a custom cargo profile. Overrides the default chosen by cargo. Ignored if the 'index.html' has one configured.
+# cargo_profile = ""
+# The output dir for all final assets.
+dist = "dist"
+# The public URL from which assets are to be served.
+public_url = "/"
+# Whether to include hash values in the output file names.
+filehash = true
+# Whether to inject scripts (and module preloads) into the finalized output.
+inject_scripts = true
+# Run without network access
+offline = false
+# Require Cargo.lock and cache are up to date
+frozen = false
+# Require Cargo.lock is up to date
+locked = false
+# Control minification
+minify = "never" # can be one of: never, on_release, always
+# Allow disabling sub-resource integrity (SRI)
+no_sri = false
+# An optional cargo profile to use
+# cargo_profile = "release-trunk"
+# Allow injecting a nonce attribute
+create_nonce = false
+
+
 [serve]
 # The address to serve on LAN.
 address = "127.0.0.1"
