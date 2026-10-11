@@ -714,26 +714,26 @@ fn solvers_page() -> Html {
                             <tr>
                                 <td class="px-6 py-3 font-bold text-emerald-400">{"Tier 8"}</td>
                                 <td class="px-6 py-3">{"1 (Topologically Isolated)"}</td>
-                                <td class="px-6 py-3">{"~8.3 Million"}</td>
-                                <td class="px-6 py-3">{"~83 MB"}</td>
-                                <td class="px-6 py-3">{"Single-board DP"}</td>
-                                <td class="px-6 py-3 text-emerald-400">{"< 2 seconds"}</td>
+                                <td class="px-6 py-3">{"339,771,612"}</td>
+                                <td class="px-6 py-3">{"3.2 GB"}</td>
+                                <td class="px-6 py-3">{"Single-board DP + Topological Isolation"}</td>
+                                <td class="px-6 py-3 text-emerald-400">{"216.8s (Exhaustive)"}</td>
                             </tr>
                             <tr>
                                 <td class="px-6 py-3 font-bold text-cyan-400">{"Tier 7"}</td>
                                 <td class="px-6 py-3">{"2 (36 Subboard Pairs)"}</td>
-                                <td class="px-6 py-3">{"~35 Million"}</td>
-                                <td class="px-6 py-3">{"~350 MB"}</td>
-                                <td class="px-6 py-3">{"Layered Retrograde DP (E in 1..18)"}</td>
-                                <td class="px-6 py-3 text-cyan-400">{"~2 minutes"}</td>
+                                <td class="px-6 py-3">{"502,353+"}</td>
+                                <td class="px-6 py-3">{"4.8 MB"}</td>
+                                <td class="px-6 py-3">{"Layered Retrograde Induction (E ≤ 4)"}</td>
+                                <td class="px-6 py-3 text-cyan-400">{"5.28s"}</td>
                             </tr>
                             <tr>
                                 <td class="px-6 py-3 font-bold text-purple-400">{"Tier 6"}</td>
                                 <td class="px-6 py-3">{"3 (84 Triplets)"}</td>
-                                <td class="px-6 py-3">{"~250M - 1B"}</td>
-                                <td class="px-6 py-3">{"~2.5 - 10 GB"}</td>
-                                <td class="px-6 py-3">{"Multi-Threaded Rayon DP"}</td>
-                                <td class="px-6 py-3 text-purple-400">{"~15–30 mins (Colab/128GB)"}</td>
+                                <td class="px-6 py-3">{"Streaming Chunks"}</td>
+                                <td class="px-6 py-3">{"Disk-Backed Chunks"}</td>
+                                <td class="px-6 py-3">{"Chunk Streaming + K-Way Disk Merge"}</td>
+                                <td class="px-6 py-3 text-purple-400">{"0.01s / Chunk"}</td>
                             </tr>
                             <tr>
                                 <td class="px-6 py-3 font-bold text-slate-500">{"Tiers 4–5"}</td>
